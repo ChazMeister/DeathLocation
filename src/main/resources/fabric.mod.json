@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "deathlocation",
+	"version": "${version}",
+	"name": "Death Location",
+	"description": "Displays death coordinates in chat to aid in recovering your items.",
+	"authors": [
+		"ChazMeister"
+	],
+	"contact": {
+		"sources": "https://github.com/ChazMeister/DeathLocation"
+	},
+	"license": "LGPL-3.0",
+	"icon": "assets/deathlocation/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"chazmeister.deathlocation.DeathLocation"
+		]
+	},
+	"mixins": [
+		"deathlocation.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
